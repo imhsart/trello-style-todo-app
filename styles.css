@@ -6,23 +6,25 @@
 }
 .container{
   height: 100vh;
-
+  background: linear-gradient(160deg,#F39EB6, #FFE4EF, #F7F6D3 );
 }
+
+/* header over */
+
 .header-navbar{
   display: flex;
   justify-content: space-between;
   padding-inline: 20px;
   align-items: center;
   height: 50px;
-  background-color: azure;
+  background: linear-gradient(90deg,black,grey, black);
 }
 .header-left-section{
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
-
-  background-color: pink;
+  color:white;
 }
 .header-middle-section{
   display: flex;
@@ -80,9 +82,6 @@
   background-color: rgb(241, 228, 219);
   border-radius: 50%;
 }
-.notification > svg{
-  color:rgb(97, 96, 96);
-}
 .user-profile{
   display: flex;
   justify-content: center;
@@ -105,4 +104,112 @@
   top:35px;
   right:23px;
   border-radius: 50%;
+}
+
+
+/* contact section */
+
+.contact-section{
+  display: flex;
+  justify-content: flex-end;
+  padding-inline-end: 10px;
+  align-items: center;
+  padding-block-start: 10px;
+  a{
+    text-decoration: underline;
+    margin-inline: 5px;
+    color:rgb(174, 6, 174);
+  }
+  a:hover{
+    color:black;
+  }
+}
+
+/* todo section starts here */
+
+.todo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 89%;
+  padding: 20px;
+}
+.todo-child-container{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+.add-button-section{
+  background: linear-gradient(90deg, azure, lightblue, lightgreen , white);
+  border-radius: 5px;
+  height: 60px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.add-todo-button{
+  border-radius: 5px;
+  cursor: pointer;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(29, 171, 163);
+  box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.1);
+  border:none;
+  padding: 8px;
+  font-size: 1rem;
+}
+.add-todo-button:active{
+  box-shadow: none;
+}
+
+.todos-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column-holder{
+  display: flex;
+  margin-inline: auto;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.todo-columns{
+  margin-block-start:50px;
+  margin-inline: 10px;
+  border-radius: 10px;
+  height: 400px;
+  width: 25%;
+}
+.heading-section{
+  text-align: center;
+  background-color: white;
+  margin-block: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.one{
+  color: rgb(32, 188, 235);
+}
+.two{
+  color:orange;
+}
+.three{
+  color:rgb(4, 194, 4);
+}
+.todo-section{
+  background-color: rgb(214, 240, 250);
+}
+.progress-section{
+  background-color: rgb(250, 238, 213);
+}
+.done-section{
+  background-color: rgb(222, 248, 222);
 }
