@@ -75,17 +75,20 @@
   cursor: pointer;
   padding: 6px;
   display: flex;
+  color: white;
   align-items: center;
   justify-content: center;
 }
 .notification-button:hover{
   background-color: rgb(241, 228, 219);
   border-radius: 50%;
+  color: black;
 }
 .user-profile{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 #user-profile{
   width: 40px;
@@ -101,8 +104,8 @@
   height: 12px;
   position: absolute;
   z-index: 99;
-  top:35px;
-  right:23px;
+  bottom:0;
+  right:0;
   border-radius: 50%;
 }
 
@@ -212,4 +215,24 @@
 }
 .done-section{
   background-color: rgb(222, 248, 222);
+}
+.todo-inputs{
+  background-color: white;
+  height: 30px;
+  margin: 5px 20px 10px;
+  border-radius: 5px;
+  border:none;
+  outline: none;
+  color: rgb(60, 60, 60);
+  padding: 6px 4px;
+  cursor: text;
+}
+.todo-inputs:focus{
+  outline: 1px solid rgb(78, 200, 248);
+}
+.task-section{
+  padding: 5px;
+   overflow-y: auto;
+  max-height: 85%;
+  overflow-x: hidden;
 }
